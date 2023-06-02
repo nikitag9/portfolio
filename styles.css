@@ -24,7 +24,7 @@
     border-width: 1px;
   } */
   
-  .nav-wrapper {
+/*   .nav-wrapper {
     display: flex;
     justify-content: space-between;
     padding: 25px;
@@ -32,7 +32,7 @@
     border-style: solid;
     border-color: white;
     border-width: 1px;
-  }
+  } */
   .content-wrapper {
     padding: 0px 15px 20px 15px;
   }
