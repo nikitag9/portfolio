@@ -1,26 +1,42 @@
 @import url("https://fonts.googleapis.com/css?family=Libre+Baskerville|Source+Sans+Pro:300,700&display=swap");
+#myVideo {
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%;
+  }
+  #pos {
+    position: relative;
+  }
+   body {
+    margin: 120px;
+    color: white;
+    text-align: center;
+  } 
 h1 { 
-  font-family: 'Libre Baskerville', "Times New Roman", serif; 
+  font-family: "Garamond", serif; 
   font-size: 32px;
 }
   h2 { 
-    font-family: 'Libre Baskerville', "Times New Roman", serif; 
+    font-family: "Garamond", serif; 
     font-size: 28px; 
 }
   h3 { 
-    font-family: 'Libre Baskerville', "Times New Roman", serif; 
+    font-family: "Garamond", serif; 
     font-size: 24px; 
 }
   h4 { 
-    font-family: 'Libre Baskerville', "Times New Roman", serif; 
+    font-family: "Garamond", serif; 
     font-size: 22px; 
 }
   h5 { 
-    font-family: 'Libre Baskerville', "Times New Roman", serif; 
+    font-family: "Garamond", serif; 
     font-size: 18px; 
 }
   p { 
-    font-family: 'Source Sans Pro', "Arial", sans-serif; 
+    font-family: "Garamond", serif; 
     font-size: 20px; 
     margin: 0; 
 }
@@ -28,7 +44,7 @@ h1 {
     height: 100vh; 
 }
   .sub-text { 
-    font-family: 'Source Sans Pro', "Arial", sans-serif; 
+    font-family:"Garamond", serif; 
     font-size: 24px; 
 }
   .owl-theme .owl-controls .owl-buttons .owl-prev { 
