@@ -89,7 +89,7 @@
     width: 100%;
   }
   
-/*   .img-text-wrapper {
+  .img-text-wrapper {
     position: absolute;
     top: 0;
     display: flex;
@@ -100,7 +100,7 @@
     text-align: center;
     padding-left: 100px;
     padding-right: 100px;
-  } */
+  }
 /*   .image-blur {
     transition: 1s;
     filter: brightness(10%);
