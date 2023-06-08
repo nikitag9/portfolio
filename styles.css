@@ -40,8 +40,17 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(255, 255, 255, 0.9); /* Set floating box background color */
   z-index: 1;
+}
+
+.header-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  z-index: -1;
 }
 
 .nav-wrapper {
@@ -52,7 +61,6 @@ header {
   border-style: solid;
   border-color: white;
   border-width: 1px;
-  background-color: rgba(255, 255, 255, 0.9); /* Set floating box background color */
 }
 
 h1 {
@@ -146,7 +154,7 @@ h1 {
 }
 
 footer {
-  width: 50%; /* Set footer width to half the current width */
+  width: 50%;
   height: 300px;
   background: gray;
   bottom: -300px;
@@ -155,7 +163,7 @@ footer {
 }
 
 .wrapper-parallax footer {
-  width: 100%; /* Override footer width for parallax effect */
+  width: 100%;
 }
 
 .wrapper-parallax footer:before {
