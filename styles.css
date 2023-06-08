@@ -111,7 +111,7 @@
   } */
 
 
-/*  #scroll-animate
+  #scroll-animate
 {
   overflow: hidden;
 }
@@ -144,12 +144,12 @@
 
  header
 {
-/*   width: 100%;
+  width: 100%;
   height: 100%;
-  background: url(https://raw.githubusercontent.com/hudsonmarinho/header-and-footer-parallax-effect/master/assets/images/bg-header.jpg) no-repeat 50% 50%;
+/*   background: url(https://raw.githubusercontent.com/hudsonmarinho/header-and-footer-parallax-effect/master/assets/images/bg-header.jpg) no-repeat 50% 50%; */
   top: 0;
   position: fixed;
-  z-index: -1; */
+  z-index: -1;
 }
 
 footer
@@ -180,7 +180,7 @@ footer
 .wrapper-parallax {
   margin-top: 100%;
   margin-bottom: 300px;
-/*  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); */
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -210,6 +210,3 @@ footer,
       transition-timing-function: cubic-bezier(0, 0, 0, 1);
 }
   
-  
-  
- */
