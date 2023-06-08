@@ -165,8 +165,10 @@ footer
     font-size: 1rem;
     color: white;
     text-align: center;
-    height: 1000px;
-    min-height: 1000px;
+/*     height: 1000px; */
+/*     min-height: 1000px; */
+    height: 200px;
+    min-height: 200px;
     position: relative;
     z-index: 1;
 }
@@ -181,7 +183,8 @@ footer
 header h1{}
 
 .content h1{
-  line-height: 1000px;
+/*   line-height: 1000px; */
+  line-height: 200px;
   color: #999;
 }
 
