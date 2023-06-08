@@ -3,8 +3,8 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 70%;
-  height: 70px;
+  width: 100%;
+  height: 100px;
   z-index: -1;
 }
 
@@ -14,6 +14,7 @@ body {
   font-size: 1rem;
   color: white;
   text-align: center;
+  background-color: #f8f8f8; /* Set off-white background color */
   overflow: hidden;
 }
 
@@ -38,6 +39,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
+  background-color: rgba(255, 255, 255, 0.9); /* Set floating box background color */
   z-index: 1;
 }
 
@@ -49,6 +51,7 @@ header {
   border-style: solid;
   border-color: white;
   border-width: 1px;
+  background-color: rgba(255, 255, 255, 0.9); /* Set floating box background color */
 }
 
 h1 {
@@ -139,4 +142,48 @@ h1 {
 
 #heightScroll {
   right: 0;
+}
+
+footer {
+  width: 50%; /* Set footer width to half the current width */
+  height: 300px;
+  background: gray;
+  bottom: -300px;
+  position: fixed;
+  z-index: -1;
+}
+
+.wrapper-parallax footer {
+  width: 100%; /* Override footer width for parallax effect */
+}
+
+.wrapper-parallax footer:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: gray;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.content h1 {
+  line-height: 200px;
+  color: #999;
+}
+
+header,
+footer,
+#scroll-animate-main {
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -webkit-transition-timing-function: cubic-bezier(0, 0, 0, 1);
+  -moz-transition-timing-function: cubic-bezier(0, 0, 0, 1);
+  transition-timing-function: cubic-bezier(0, 0, 0, 1);
 }
