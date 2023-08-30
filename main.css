@@ -1,215 +1,684 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-167785635-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;1,300&family=ZCOOL+XiaoWei&display&family=Marcellus&display=swap');
 
-  gtag('config', 'UA-167785635-1');
-</script>
-<link rel="shortcut icon" type="image/x-icon" href="logo.ico" />
+*{
+  box-sizing: border-box;
+  background: #f3f2ed;
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Hind&family=Inconsolata&display=swap" rel="stylesheet">
-<div class="progress-bar" id="progressBar"></div>  
-<script>
-    window.addEventListener('scroll', handleScroll);
+}
+main{
+  max-width: 80em;
+  min-width: 30em;
+  margin: 0 auto;
+  height: 100%;
+  margin-top: 0rem;
+  background: #f3f2ed;
+}
 
-    function handleScroll() {
-        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;  
-        var scrolled = (winScroll / height) * 100;
-    
-        document.getElementById("progressBar").style.width = scrolled + "%";
+body{
+  margin:0;
+  background: #f3f2ed;
+
+
+}
+
+nav{
+  height: 60px;
+  position: fixed;
+  width: 100%;
+}
+
+nav img{
+  position: absolute;
+  top:-10px;
+  left: 50px;
+  width: 150px;
+  /* height: 50px; 
+  margin-top: 5px;
+  margin-left: 15px; */
+}
+
+nav ul{
+  float: right;
+  margin-right: 50px;
+  margin-top: 23px;
+  list-style: none;
+
+}
+
+nav ul li{
+  display: inline-block;
+  line-height: 0px;
+  margin: 0px 5px;
+}
+
+nav ul li a.link{
+  font-family: 'Hind', sans-serif;
+  position: relative;
+  padding: 20px 30px;
+  color: #2E5090;
+  font-size: 18px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.home-item a{
+  text-decoration: none;
+}
+label #sign-one,
+label #sign-two{
+  font-size: 30px;
+  color: #2E5090;
+  float: right;
+  line-height: 70px;
+  margin-right: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+#res-menu{
+  display: none;
+}
+
+h1{
+  font-family: 'Hind', sans-serif;
+  color: #2E5090;
+  margin-bottom: 1rem;
+  font-size: 40px;
+  font-weight: 400;
+  margin-top: 0rem;
+  padding-top: 8rem;
+  max-width: 800px;
+  line-height: 54px;
+}
+
+h1.lab{
+  padding-top:13rem;
+}
+
+h2 {
+  font-family:s 'Hind', sans-serif;
+  font-size: 30px;
+  color: #2E5090;
+  line-height: 25px;
+  font-weight: 400;
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+
+.title{
+  font-family: 'Hind', sans-serif;
+  color: #2E5090;
+  line-height: 30px;
+  font-weight: 400;
+  font-size: 25px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  text-decoration:none;
+  /* border-bottom: 1px solid #28282B; */
+}
+
+.labtitle{
+  font-family: 'Hind', sans-serif;
+  color: #2E5090;
+  line-height: 30px;
+  font-weight: 400;
+  font-size: 25px;
+  margin-top: 70px;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  text-decoration:none;
+  border-bottom: 1px solid #2E5090;
+}
+
+p{
+  font-family: 'Inconsolata', monospace;
+  font-size: 18px;
+  font-weight: 300;
+  max-width: 700px;
+  line-height: 30px;
+  padding-bottom:  18px;
+  margin-bottom: 18px;
+  color:#2E5090;
+}
+
+p.des{
+  margin-top: 1px;
+  padding-top: 3px;
+  margin-bottom: 30px;
+}
+p.view{
+  margin-top: 0;
+  margin-bottom: 1.3rem;
+  color:#2E5090;
+  font-size: 16px;
+}
+a.link{
+  font-family: 'Hind', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color:#2E5090;
+  text-decoration: none;
+  border-radius: 50px;
+  border: 1px solid #2E5090;
+  padding:10px 30px;
+  background-color:#f3f2ed;
+  margin: 5px;
+}
+
+a.link:hover{
+  background-position-y:70%;
+  color: #f3f2ed;
+  background: #2E5090;
+  /* cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>ðŸ‘€</text></svg>") 16 0,auto; !emojicursor.app */
+}
+
+a.underline{
+  font-family: 'Inconsolata', monospace;
+  color:#FF965E;
+  text-decoration: none;
+}
+
+.img-hover-zoom {
+  overflow: hidden;
+}
+
+.img-hover-zoom img {
+  transition: transform .5s ease;
+}
+
+
+.img-hover-zoom:hover img {
+  transform: scale(0.9);
+}
+
+
+.fit{
+  width: 100%;
+}
+
+.visible-mobile{
+  display:none !important;
+}
+
+.work{
+  display: grid;
+  grid-template:repeat(2,1fr)/repeat(2,1fr);
+  justify-content: space-evenly;
+  grid-gap: 0rem;
+  grid-column-gap: 7rem;
+  padding-left: 50px;
+}
+.other{
+  display: grid;
+  grid-template:repeat(1,4fr)/repeat(4,1fr);
+  justify-content: space-evenly;
+  grid-gap: 0.3rem;
+}
+.three-columns-grid{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(1,3fr);
+  grid-gap: 1rem;
+}
+.two-columns{
+  display: flex;
+  align-items: center;
+}
+
+.labgrid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+.homeheader{
+  display: grid;
+  /* grid-template-columns: 1fr 2fr; */
+  grid-gap: 5rem;
+  padding-bottom: 90px;
+  padding-top: 100px;
+  margin-left: 400px;
+}
+.intropic {
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top: 13%; /* Change this value to adjust the vertical position */
+    left: 15%;
+}
+.about{
+  margin-left: 0rem;
+}
+p.short-about{
+  width: 40rem;
+  line-height: 2rem;
+}
+
+.sidebar{
+  align-items: left;
+  justify-content:left;
+  margin-left:50px;
+  position: relative;
+  display: inline-block;
+  background-color:#1CCCCC;
+  z-index:10;
+}
+
+.sidebar ul{
+  top: 200px;
+  position:fixed;
+  list-style: none;
+  padding: 10px;
+
+}
+.sidebar ul li{
+  margin: 5px 0;
+}
+
+.sidebar ul li a{
+  text-decoration: none;
+  color: #2E5090;
+  font-family: 'Inconsolata', monospace;
+  font-weight: 600;
+  line-height: 25px;
+  font-size: 15px;
+}
+
+.sidebar ul li a:hover{
+  color:#FF965E;
+}
+
+iframe{
+  width:1080px;
+  height:600px;
+}
+
+hr {
+  border: 1px solid #959595;
+}
+
+footer{
+  margin: 50px;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer {
+  font-size: 20px;
+  font-family: 'Hind', sans-serif;
+  font-weight: 300;
+
+}
+
+@media (min-width: 768px) and (max-width:1080px){
+  main{
+    max-width: 40em;
+    min-width: 10em;
+    margin: 0 auto;
+  }
+
+  .sidebar{
+    display: none;
+  }
+
+  iframe{
+    width:800px;
+    height:500px;
+  }
+
+}
+
+@media (min-width: 1080px) and (max-width:1468px){
+  main{
+    max-width: 60em;
+    min-width: 10em;
+    margin: 0 auto;
+  }
+
+  .sidebar{
+    display: none;
+  }
+
+  iframe{
+    width:1000px;
+    height:550px;
+  }
+}
+
+@media (min-width: 300px) and (max-width:812px){
+  main{
+    max-width: 22em;
+    min-width: 18em;
+    margin: 0 auto;
+    height: 100%;
+    padding-bottom: 60px;
+  }
+
+  body{
+    margin:0;
+    min-height:100%;
+  }
+  label #sign-one{
+    display: block;
+  }
+
+  nav ul{
+    position: fixed;
+    width: 95%;
+    top:30px;
+    right: -80%;
+    text-align: right;
+    transition: .9s;
+    z-index: 10;
+  }
+
+  nav ul li{
+    display: block;
+    margin: 10px 0px;
+  }
+
+  nav img{
+    width:60px;
+    top:5px;
+    left:20px;
+  }
+
+  nav ul li a.link{
+    font-size: 20px;
+    font-weight: 400;
+    margin:1px 0px;
+  }
+
+  #res-menu:checked ~ ul{
+    left: 0;
+  }
+
+  #res-menu:checked ~ label #sign-one{
+    display: none;
+  }
+
+  #res-menu:checked ~ label #sign-two{
+    display: block;
+  }
+
+  h1, .homeheader{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+  }
+  h1{
+    margin-top: 0rem;
+    font-size: 2.4rem;
+    font-weight: 400;
+  }
+  h1.homeheader{
+    margin-bottom: 0.5rem;
+    font-size: 29px;
+    line-height: 37px;
+    padding-top: 0rem;
+}
+
+    h1.lab{
+      padding-top:80px;
     }
-</script>
-    <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-PSK2XLS');</script>
-<!-- End Google Tag Manager -->
 
-    <meta charset="UTF-8">
-    <title>Home Depot Internship | Nikita George Portfolio</title>
-	<meta name="Author" content="Nikita George"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="hd1.css">
-    <link rel="icon" type="image/png" href="../images/logo.png">
-  <meta name="viewport" content= "width=device-width, initial-scale=1.0">
+  h2{
+    font-size: 1.5rem;
+    line-height: 1.4rem;
+    margin-top: 50px;
+  }
 
-</head>
-<body id="google">
-    <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PSK2XLS"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+  p{
+    font-size: 17px;
+    line-height: 28px;
+  }
 
-<nav>
-    <input type="checkbox" id="res-menu">
-    <label for="res-menu">
-        <i class="fa fa-hand-o-down" id="sign-one"></i>
-        <i class="fa fa-hand-o-up" id="sign-two"></i>
-    </label>
-    <!-- <a href="../index.html"><img class="logo" src="../images/logo.png" alt="Nikita George Logo"></a> -->
-    <ul>
-        <li><a class="link" href="https://github.com/nikitag9" target="_blank">Github</a></li>
-        <li><a class="link" href="NikitaGeorgeResume_2023.pdf" target="_blank">Resume</a></li>
-    </ul>
-    <div class="image-container">
-        <a href="index.html"><img src="logo.png" img class="logo" rel="icon" alt="Your Image"></a>
-      </div>
-</nav>
+  p.short-about{
+    max-width: 20rem;
+  }
 
-    <img class="fit hidden-mobile" src="gtriheader.png">
-    <img class="fit visible-mobile" src="../images/graphic/google/google_banner_mobile.jpg">
-<main>
-    <div class="cursor-container">
-        <div class="cursor"></div>
-      </div>
-      <div class="content">
+  .list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-     <div class="three-columns-grid">
-    <div>
-    <h2 id="top">Team</h2>
-    <p> Aerospace and Acoustics Technologies Division</p>
-    </div>
+  .fit{
+    width: 100%;
+  }
 
+  .new-paragraph a{
+    display:block;
+    font-size: 18px;
+    line-height: 30px;
+  }
 
-    <div>
-    <h2>Role</h2>
-    <p>UX Design Intern</p>
-    </div>
+  .work, .other{
+    display: block;
+  }
 
-    <div>
-        <h2>Timespan</h2>
-        <p>May 2023- now</p>
-    </div>
+  .home-image{
+    max-width: 22rem;
+    margin: 2rem 1.5rem 0 1.5rem;
+  }
+  .home-image-vertical{
+    max-width: 15rem;
+    margin: 2rem 5rem 0 5rem;
+  }
 
-    <div>
-        <h2>Tools</h2>
-        <p>React<br> xCode<br>MongoDB</p>
-    </div>
-    </div>
+  .visible-mobile{
+    display:inline !important;
+  }
 
+  .hidden-mobile{
+    display:none !important;
+  }
 
-    <p>Unfortunately I cannot share my work, but as a UX intern for the Georgia Tech Research Institute, I am currently creating an iOS newsfeed app that allows users to post messages, pictures, videos, and polls. It also allows users to reply and like posts and directly message other users. It is created in React in xCode and uses MongoDB with FastAPI as its database. Feel free to email me with any questions about the project!
-    </p>
+  .same-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
-    
-    <!-- <div class="three-columns-grid">
-        <div>
-          <img class="fit" src="../images/graphic/google/photo1.jpg" alt=" ">
-        </div>
+  .img-show{
+    display: grid;
+    grid-template: repeat(2,1fr)/repeat(2,1fr);
+    grid-gap: 0.5rem;
+  }
 
-        <div>
-            <img class="fit" src="../images/graphic/google/photo2.jpg" alt="My farewell team lunch">
-        </div>
+  .intro1{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    padding-bottom: 30px;
+  }
+  .two-columns, .footer{
+    display: grid;
+    grid-template-columns: repeat(1,2fr);
+    grid-template-rows: repeat(1,1fr);
+    grid-gap: 0px;
+    margin-top: 0px;
+    padding-top: 70px;
+  }
+  .three-columns-grid{
+    display: grid;
+    grid-template-columns: repeat(1,3fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-gap: 0px;
+  }
+  .three-columns-grid h2{
+    margin-top: 20px;
+  }
 
-        <div>
-            <img class="fit" src="../images/graphic/google/photo3.jpg" alt="Me and UX researchers">
-        </div>
-</div> -->
+  .sidebar{
+    display: none;
+  }
 
+  iframe{
+    width:300px;
+    height:200px;
+  }
 
+}
+.cursor {
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    /* border-radius: 50%; */
+    background: transparent;
+    pointer-events: none;
+    z-index: 111;
+    border: 1px solid #2E5090;
+    transition: all 0.2s ease-out;
+    animation: moveCursor1 .2s infinite alternate;
+}
 
+.expand {
+    background: transparent;
+    animation: moveCursor2 .2s forwards;
+    border: 1px solid #000;
+}
 
-<!-- <h2>Check out similar projects that may interest you</h2>
-<div class="three-columns-grid">
-        <div class="home-item">
-          <a class="img-hover-zoom" href="../schoolhouse/index.html"><img class="fit" src="../images/graphic/HOME-1.jpeg" alt="Schoolhouse.world dashboard design">
-          </a>
-        </div>
+@keyframes moveCursor1 {
+    from {
+        transform: scale(1);
+    }
 
-        <div class="home-item">
-            <a class="img-hover-zoom" href="../nickelodeon/index.html"><img class="fit" src="../images/graphic/home-10.jpg" alt="An iPad app for kids">
-            </a>
-        </div>
+    to {
+        transform: scale(.8);
+    }
+}
 
-        <div class="home-item">
-            <a class="img-hover-zoom" href="../msp/index.html"><img class="fit" src="../images/graphic/msp-header.png" alt="Minnesota Street Project Visual Identity Redesign">
-            </a>
-        </div>
-</div> -->
-</div>
+@keyframes moveCursor2 {
+    0% {
+        transform: scale(1);
+    }
 
+    50% {
+        transform: scale(2);
+    }
 
-
-
-</main>
-
-<footer class="footer">
-<div class="list">
-    <a class="link" href="https://www.linkedin.com/in/nikita-george-8057761b9/" target="_blank">LinkedIn</a>
-    <a class="link" href="mailto:nikitag@gatech.edu" target="_blank">Email</a>
-  </div>
-</footer>
-
-
-    <script>
-    (function () {
-        "use strict";
-    
-        function swapStyle() {
-            var el = document.querySelector('nav');
-            el.classList.toggle('show');
-        }
-    
-        var menu = document.querySelectorAll('.menu-btn');
-        for (let item of menu) {
-            item.addEventListener('click', swapStyle);
-        }
-        
-        
-    })();
-    
-    </script>
-<script>
-
-    const cursor = document.querySelector('.cursor');
-
-   document.addEventListener('mousemove', e => {
-       cursor.setAttribute("style", "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;")
-   });
-
-   document.addEventListener('click', e => {
-       cursor.classList.add("expand");
-       setTimeout(() => {
-           cursor.classList.remove("expand");
-       }, 500);
-   });
-
-   $("#restart").queue(function() {  
-       var original = $(this);
-       var newClass = original.clone(true);
-       setInterval(function() {
-           original.before(newClass);
-           $("." + original.attr("class") + ":last").remove();
-       },47000);
-   });
-</script>
-<script>
-    console.log("hey");
-    window.addEventListener('scroll', () => {
-        const content = document.querySelector('.content');
-            const rect = content.getBoundingClientRect();
-
-            if (rect.top < window.innerHeight && rect.bottom > 0) {
-                content.style.opacity = 1;
-            } else {
-                content.style.opacity = 0;
-            }
-    });
-
-
-
-</script>
-
-</body>
-</html>
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+.centered {
+    position: absolute;
+    top: 69%; /* Change this value to adjust the vertical position */
+    left: 45%; /* Change this value to adjust the horizontal position */
+    transform: translate(-50%, -50%);
+}
+.typer-container {
+    /* font-weight: 700; */
+    /* font-size: 150px !important; */
+    color: #2E5090;
+    /* margin: 100; */
+    /* line-height: 2;  */
+    position: absolute;
+    top: 51%; /* Change this value to adjust the vertical position */
+    left: 44.5%;
+  }
+  /* Sets styles and CSS animation values for typing animation*/
+  .typer {
+    width: 21em; 
+    position: absolute;
+    /* height: 520px; */
+    opacity: 0;
+    /* margin-top: 50px; */
+    overflow:auto;
+    -webkit-animation: type 24s steps(28);
+    animation: type 8s steps(28);
+  }
+  .typer-container .typer {
+    font-size: 36px !important;
+    font-family: 'Inconsolata', monospace;
+  }
+  /* Sets delay for each animated word*/
+  .typer:nth-child(2) { 
+    -webkit-animation-delay: 3s; 
+    animation-delay: 3s;
+  }
+  .typer:nth-child(3) { 
+    -webkit-animation-delay: 6s; 
+    animation-delay: 6s;
+  }
+  .typer:nth-child(4) { 
+    -webkit-animation-delay: 9s;
+      animation-delay: 9s; 
+  }
+  .typer:nth-child(5) { 
+    -webkit-animation-delay: 12s; 
+      animation-delay: 12s; 
+  }
+  .typer:nth-child(6) { 
+    -webkit-animation-delay: 15s;
+      animation-delay: 15s; 
+  }
+  /* Keyframes for animation */ 
+  @keyframes type {
+      0% {opacity: 0; width:0;}
+      2% {opacity: 1;}
+      14% {opacity: 1; width: 12ch;}
+      26% {opacity: 1; width: 0;}
+      27% {opacity: 0;}
+  }
+  @-webkit-keyframes type {
+      0% {opacity: 0; width:0;}
+      2% {opacity: 1;}
+      14% {opacity: 1; width: 12ch;}
+      26% {opacity: 1; width: 0;}
+      27% {opacity: 0;}
+  }
+.blinking-cursor {
+	position: relative;
+	-webkit-animation: 1s blink step-end infinite;
+	-moz-animation: 1s blink step-end infinite;
+	-ms-animation: 1s blink step-end infinite;
+	animation: 1s blink step-end infinite;
+}
+@keyframes "blink" {
+	from, to {
+    	color: transparent;
+	}
+	50% {color: #2E5090;}
+}
+@-moz-keyframes blink {
+	from, to {
+    	color: transparent;
+	}
+	50% {color: #2E5090;}
+}
+@-webkit-keyframes "blink" {
+	from, to {
+    	color: transparent;
+	}
+	50% {color: #2E5090;}
+}
+  .image-container {
+    width: 100px; /* Adjust the size of the container as needed */
+    height: 100px;
+    /* overflow: hidden; */
+    position: fixed;
+    margin-left: -50px;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease; /* Add transition effect for smooth animation */
+  }
+  
+  .image-container:hover img {
+    transform: rotate(360deg); /* Rotate the image 360 degrees on hover */
+  }
